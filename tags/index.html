@@ -441,6 +441,9 @@
           </div>
           
   
+    
+    <div class="comments" id="comments"></div>
+  
 
 
 
@@ -788,6 +791,32 @@
 
 
 
+
+  
+    
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: false,
+    notify: false,
+    appId: 'WqNxbOEn8q5pjyag340CYBvw-gzGzoHsz',
+    appKey: 'eiwP2Wgyw8mOHXbY3GjyyX9X',
+    placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false,
+    lang: '' || 'zh-cn'
+  });
+</script>
 
   
 
