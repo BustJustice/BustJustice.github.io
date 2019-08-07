@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>第一小节js</title>
+      <link href="/2019/08/07/%E7%AC%AC%E4%B8%80%E5%B0%8F%E8%8A%82js/"/>
+      <url>/2019/08/07/%E7%AC%AC%E4%B8%80%E5%B0%8F%E8%8A%82js/</url>
+      
+        <content type="html"><![CDATA[<pre><code>1-基本数据类型/值类型    1.1-String    1.2-Boolean    1.3-Null    1.4-Undefined    1.5-Number2-对象数据类型/引用数据类型    2.1-Object    2.2-Array    2.3-Function3-typeof    3.1-可以判断 undefined,function,string,boolean,number    3.2-不能判断 null,object,array4-==    4.1-x和y都是null或undefined:规则: 没有隐式类型转换,无条件返回true    4.2-x或y是NaN : NaN与任何数字都不等规则：没有隐式类型转换，无条件返回false    4.3-x和y都是string，boolean，number规则：有隐式类型转换，会将不是number类型的数据转成number    4.4-x或y是复杂数据类型 : 会先获取复杂数据类型的原始值之后再左比较    4.5-x和y都是复杂数据类型 :规则只比较地址，如果地址一致则返回true，否则返回false5-Boolean    5.1-false +0-0 NaN undefined null &apos;&apos;空串 false document.all()    5.2-true6-instanceof    6.1-左边实例，右边构造函数7-===    7.1-类型与值完全一致8-Number转换    8.1-可以转换为1 true    8.2-转换为0 &quot;&quot;空串，false,&quot;0&quot;,null,[]    8.3-转换为NaN &quot;xxx&quot;,undefined,{},function10-其他符号 &lt; , &gt;, + 等转换    https://blog.csdn.net/itcast_cn/article/details/82887895</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>无题</title>
       <link href="/2019/08/04/%E6%97%A0%E9%A2%98/"/>
       <url>/2019/08/04/%E6%97%A0%E9%A2%98/</url>
