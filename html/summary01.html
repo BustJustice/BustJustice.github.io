@@ -12,9 +12,6 @@
             top: 0;
             margin: 0 auto;
         }
-        .page{
-            border: 1px solid black;
-        }
         .page:after{
            content: "";
            clear: both;
@@ -35,9 +32,10 @@
             float: left;
         }
         img{
+            box-sizing: border-box;
+            padding-left: 30px;
             float: left;
         }
-
     </style>
 </head>
 <body>
@@ -62,9 +60,10 @@
               * 函数上下文环境==>对应的函数使用域
         </pre>
     </div>
+    <hr>
     <div class="page">
         <h3>作用域链</h3>
-        <img src="https://s2.ax1x.com/2019/08/15/mEep6J.gif" width="400px">
+        <img src="https://s2.ax1x.com/2019/08/15/mEep6J.gif">
         <pre>
         1. 理解
           * 多个上下级关系的作用域形成的链, 它的方向是从下向上的(从内到外)
