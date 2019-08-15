@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>Summary05</title>
+      <link href="/2019/08/15/Summary05/"/>
+      <url>/2019/08/15/Summary05/</url>
+      
+        <content type="html"><![CDATA[<h2 id="事件循环模型"><a href="#事件循环模型" class="headerlink" title="事件循环模型"></a>事件循环模型</h2><p><img src="https://s2.ax1x.com/2019/08/15/mEBrUx.png" alt="mEBrUx.png"></p><h3 id="模型的运转流程"><a href="#模型的运转流程" class="headerlink" title="模型的运转流程"></a>模型的运转流程</h3><ul><li>执行初始化代码, 将事件回调函数交给对应模块管理</li><li>当事件发生时, 管理模块会将回调函数及其数据添加到回调列队中</li><li>只有当初始化代码执行完后(可能要一定时间), 才会遍历读取回调队列中的回调函数执行</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Summary04</title>
       <link href="/2019/08/15/Summary04/"/>
       <url>/2019/08/15/Summary04/</url>
