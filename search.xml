@@ -4,6 +4,71 @@
   
     
     <entry>
+      <title>CSS3与HTML5新增标签</title>
+      <link href="/2019/08/22/CSS3%E4%B8%8EHTML5%E6%96%B0%E5%A2%9E%E6%A0%87%E7%AD%BE/"/>
+      <url>/2019/08/22/CSS3%E4%B8%8EHTML5%E6%96%B0%E5%A2%9E%E6%A0%87%E7%AD%BE/</url>
+      
+        <content type="html"><![CDATA[<p>###HTML5新增标签<br>| 新增元素 | 说明 |<br>| :—| :— |<br>| video | 表示一段视频并且提供播放的用户界面 |<br>| audio | 表示音频 |<br>| canvas | 表示位图区域 |<br>| source | 为video和audio提供数据源 |<br>| track | 为video和audio指定字母 |<br>| svg | 定义矢量图 |<br>| code | 代码段 |<br>| figure | 和文档有关的图例 |<br>| figcaption | 图例的说明 |<br>| main | 主内容区 |<br>| time | 日期和时间值 |<br>| mark | 高亮的引用文字 |<br>| datalist | 提供给其他空间的预定义选项 |<br>| keygen | 密钥对生成器空间 |<br>| output | 计算值 |<br>| progress | 进度条 |<br>| menu | 菜单 |<br>| embed | 嵌入的外部资源 |<br>| menuitem | 用户可以点击的菜单项 |<br>| menu | 菜单 |<br>| template | 声明是模块元素 |<br>| section | 独立内容区块 |<br>| nav | 导航条部分信息 |<br>| aside | 标签内容之外的与标签内容相关的辅助信息 |<br>| article | 特殊独立区块表示这篇页眉的核心内容 |<br>| footer/header | 底部信息/头部信息 |</p><p>###CSS3<br>CSS3被划分成模块，最重要的几个模块包括：选择器，框模型，<br>背景和边框，文本效果，2D3D转换，动画，多列布局，用户界面 </p><ul><li>选择器</li><li>框模型</li><li>背景和边框<br>  border-radius,box-shadow,border-image<br>  background-size:规定背景图片的尺寸<br>  background-origin:规定背景图片的定位区域<br>  background-clip:规定背景的绘制区域</li><li>文本效果（常用）<br>  text-shadow:设置文字阴影<br>  word-wrap:强制换行<br>  word-break<br>  css3提出@font-face规则，规则中定义了font-family，font-weight，<br>  font-style，font-stretch，src，unicode-range</li><li>2D3D转换<br>  transform：向元素应用2/3D转换<br>  transition：过渡</li><li>动画</li><li>@keyframes规则<br>  animation，animation-name，animation-duration</li><li>用户界面（常用）<br>  box-sizeing，resize<br>  ####css3新增伪类<br>  : nth-child<br>  : nth-last-child()<br>  : only-child<br>  : last-child<br>  : nth-of-type()<br>  : only-of-type()<br>  : empty<br>  : target这个伪类允许我们选择基于URL的元素如果这个元素有一个识别器<br>  （#target）那么这个:target就会对这个ID识别器的元素增加样式<br>  : enabled<br>  : disabled<br>  : checked<br>  : not<br>###H5不再支持的标签<br>  1.acronym （建议abbr）：定义首字母缩写<br>  2.applet （建议object）：定义applet<br>  3.basefont(使用css控制)<br>  4.big(使用css控制)：定义大号文本<br>  5.center（使用css控制）：定义居中文本<br>  6.font（使用css控制）<br>  7.strike(使用del):定义加删除线的文本<br>  8.tt(使用css控制)：定义打字机文本<br>  9.u(使用css控制)：定义下划线文本<br>  10.frame(建议iframe):定义子窗口<br>  11.frameset：定义框架的集<br>  12.noframes：定义noframe部分<br>  13.dir:定义目录列表<br>  14.xmp:定义预格式文本<br>  15.isindex：定义单行的输入域</li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CSS优先级</title>
+      <link href="/2019/08/21/CSS%E4%BC%98%E5%85%88%E7%BA%A7/"/>
+      <url>/2019/08/21/CSS%E4%BC%98%E5%85%88%E7%BA%A7/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Summary08</title>
+      <link href="/2019/08/18/Summary08/"/>
+      <url>/2019/08/18/Summary08/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Summary07</title>
+      <link href="/2019/08/18/Summary07/"/>
+      <url>/2019/08/18/Summary07/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Summary06</title>
+      <link href="/2019/08/18/Summary06/"/>
+      <url>/2019/08/18/Summary06/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Summary05</title>
       <link href="/2019/08/15/Summary05/"/>
       <url>/2019/08/15/Summary05/</url>
