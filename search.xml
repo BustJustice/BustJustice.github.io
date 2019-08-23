@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>常见的伪类伪元素</title>
+      <link href="/2019/08/23/%E5%B8%B8%E8%A7%81%E7%9A%84%E4%BC%AA%E7%B1%BB%E4%BC%AA%E5%85%83%E7%B4%A0/"/>
+      <url>/2019/08/23/%E5%B8%B8%E8%A7%81%E7%9A%84%E4%BC%AA%E7%B1%BB%E4%BC%AA%E5%85%83%E7%B4%A0/</url>
+      
+        <content type="html"><![CDATA[<p>##伪类<br><img src="https://s2.ax1x.com/2019/08/23/mDFthj.png" alt="mDFthj.png"></p><p>##伪元素（常用）<br>:before 该伪元素定义在元素之前添加内容</p><p>:after 该伪元素定义在元素之后添加内容</p><p>:first-line 该伪元素向文本的首行添加特殊样式</p><p>:first-letter 该伪元素向文本的第一个字母添加特殊样式</p><p>这四种伪元素都是在平常写代码的时候比较常用的元素。</p><p>区别:<br>简单来说，就是伪元素添加了不在DOM数之外的虚拟容器，<br>而伪类就是个类，和.class的优先级相同</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CSS3与HTML5新增标签</title>
       <link href="/2019/08/22/CSS3%E4%B8%8EHTML5%E6%96%B0%E5%A2%9E%E6%A0%87%E7%AD%BE/"/>
       <url>/2019/08/22/CSS3%E4%B8%8EHTML5%E6%96%B0%E5%A2%9E%E6%A0%87%E7%AD%BE/</url>
