@@ -242,7 +242,7 @@
       <link href="/2019/08/08/%E5%8E%9F%E5%9E%8B%E9%93%BE%E6%80%BB%E7%BB%93/"/>
       <url>/2019/08/08/%E5%8E%9F%E5%9E%8B%E9%93%BE%E6%80%BB%E7%BB%93/</url>
       
-        <content type="html"><![CDATA[<p>图示如下<br><img src="https://s2.ax1x.com/2019/08/08/eoyRu6.png" alt="eoyRu6.png"><br>原型链总结四句话。<br>1.函数的原型对象的prototype是其实例对象的<em>proto</em><br>2.所有的函数对象，都是new Function()出来的（包括自身）<br>3.每个函数都有一个prototype属性, 它默认指向一个Object空对象(即称为: 原型对象)（Object对象除外）<br>4.Object的原型对象的_proto_为null即原型链的尽头</p>]]></content>
+        <content type="html"><![CDATA[<p>图示如下<br><img src="https://s2.ax1x.com/2019/08/24/msjQ41.png" alt="msjQ41.png"><br>原型链总结四句话。<br>1.函数的原型对象的prototype是其实例对象的<em>proto</em><br>2.所有的函数对象，都是new Function()出来的（包括自身）<br>3.每个函数都有一个prototype属性, 它默认指向一个Object空对象(即称为: 原型对象)（Object对象除外）<br>4.Object的原型对象的_proto_为null即原型链的尽头</p>]]></content>
       
       
       
