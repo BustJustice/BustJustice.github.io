@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>cookies&amp;sessionStorage&amp;localStorage</title>
+      <link href="/2019/08/24/cookies-sessionStorage-localStorage/"/>
+      <url>/2019/08/24/cookies-sessionStorage-localStorage/</url>
+      
+        <content type="html"><![CDATA[<p>详情见：<br><a href="https://segmentfault.com/a/1190000012057010" target="_blank" rel="noopener">https://segmentfault.com/a/1190000012057010</a><br><a href="https://www.cnblogs.com/pengc/p/8714475.html" target="_blank" rel="noopener">https://www.cnblogs.com/pengc/p/8714475.html</a><br>其中细节：<br>localStorage和sessionStorage可以通信，但有条件</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>字符串处理和数组常用方法</title>
+      <link href="/2019/08/24/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E5%92%8C%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/"/>
+      <url>/2019/08/24/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E5%92%8C%E6%95%B0%E7%BB%84%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>use strict有哪些影响</title>
       <link href="/2019/08/24/use-strict%E6%9C%89%E5%93%AA%E4%BA%9B%E5%BD%B1%E5%93%8D/"/>
       <url>/2019/08/24/use-strict%E6%9C%89%E5%93%AA%E4%BA%9B%E5%BD%B1%E5%93%8D/</url>

@@ -371,6 +371,348 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.hanshang.xyz/2019/08/21/CSS优先级/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="HanShang">
+      <meta itemprop="description" content="为自己加油">
+      <meta itemprop="image" content="/images/author.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HS博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/21/CSS优先级/" class="post-title-link" itemprop="url">CSS优先级</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-21 16:21:48" itemprop="dateCreated datePublished" datetime="2019-08-21T16:21:48+08:00">2019-08-21</time>
+            </span>
+          
+
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-23 14:34:40" itemprop="dateModified" datetime="2019-08-23T14:34:40+08:00">2019-08-23</time>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+            
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="fa fa-comment-o"></i>
+    </span>
+    
+      <span class="post-meta-item-text">评论数：</span>
+    
+  
+    <a href="/2019/08/21/CSS优先级/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/21/CSS优先级/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>CSS 优先规则1： 最近的祖先样式比其他祖先样式优先级高。<br>CSS 优先规则2：”直接样式”比”祖先样式”优先级高。<br>CSS 优先规则3：优先级关系：内联样式 &gt; ID 选择器 &gt; 类选择器 = 属性选择器 = 伪类选择器 &gt; 标签选择器 = 伪元素选择器<br>CSS 优先规则4：计算选择符中 ID 选择器的个数（a），计算选择符中类选择器、属性选择器以及伪类选择器的个数之和（b），计算选择符中标签选择器和伪元素选择器的个数之和（c）。按 a、b、c 的顺序依次比较大小，大的则优先级高，相等则比较下一个。若最后两个的选择符中 a、b、c 都相等，则按照”就近原则”来判断。<br>CSS 优先规则5：属性后插有 !important 的属性拥有最高优先级。若同时插有 !important，则再利用规则 3、4 判断优先级。</p>
+<p>PS:虽然!important很强大，但是继承来的话应该遵守规则2<br><img src="https://s2.ax1x.com/2019/08/23/mBKQtf.png" alt="mBKQtf.png"></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css">        <span class="selector-id">#grandfather</span>&#123;</span></span><br><span class="line">            color: white;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-id">#father</span>&#123;</span></span><br><span class="line">            color: black !important;</span><br><span class="line">        &#125;</span><br><span class="line">        h2&#123;</span><br><span class="line">            color: deeppink;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-attr">[class="content"]</span>&#123;</span></span><br><span class="line">            color: yellow;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-class">.content</span>&#123;</span></span><br><span class="line">            color: green;</span><br><span class="line">        &#125;</span><br><span class="line"><span class="css">        <span class="selector-id">#child</span>&#123;</span></span><br><span class="line">            color: pink;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"grandfather"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"father"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">h2</span> <span class="attr">id</span>=<span class="string">"child"</span> <span class="attr">class</span>=<span class="string">"content"</span> <span class="attr">style</span>=<span class="string">"color:red"</span>&gt;</span>字体颜色最终为<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+
+
+	<div>
+	  
+	</div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.hanshang.xyz/2019/08/18/Summary08/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="HanShang">
+      <meta itemprop="description" content="为自己加油">
+      <meta itemprop="image" content="/images/author.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HS博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/18/Summary08/" class="post-title-link" itemprop="url">Summary08</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-18 12:35:42" itemprop="dateCreated datePublished" datetime="2019-08-18T12:35:42+08:00">2019-08-18</time>
+            </span>
+          
+
+          
+
+          
+
+          
+          
+
+          
+
+          
+            
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="fa fa-comment-o"></i>
+    </span>
+    
+      <span class="post-meta-item-text">评论数：</span>
+    
+  
+    <a href="/2019/08/18/Summary08/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/18/Summary08/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+
+
+	<div>
+	  
+	</div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://www.hanshang.xyz/2019/08/18/Summary07/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1816,379 +2158,11 @@
   </article>
 
     
-        
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.hanshang.xyz/2019/08/13/面经/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="HanShang">
-      <meta itemprop="description" content="为自己加油">
-      <meta itemprop="image" content="/images/author.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HS博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/08/13/面经/" class="post-title-link" itemprop="url">面经</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-08-13 19:52:53" itemprop="dateCreated datePublished" datetime="2019-08-13T19:52:53+08:00">2019-08-13</time>
-            </span>
-          
-
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-08-15 09:25:42" itemprop="dateModified" datetime="2019-08-15T09:25:42+08:00">2019-08-15</time>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-
-          
-            
-  
-  <span class="post-meta-item">
-    
-    <span class="post-meta-item-icon">
-      <i class="fa fa-comment-o"></i>
-    </span>
-    
-      <span class="post-meta-item-text">评论数：</span>
-    
-  
-    <a href="/2019/08/13/面经/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/13/面经/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <pre><code>经历第一次比较正式的面试，主要是技术面。</code></pre><p>采用了两人一小时轮番提问的方式，说真的，比较累人。<br>    一回生，二回熟。第一次面试总结经验吧。<br>我觉得主要在考察1.你解决问题的思路。2.结果背后的原理。<br>事实上，我觉得考察的方向，不就在招聘的要求和自己的简历上<br>这些来源，加上可以查看往年的公司面试的问答，范围基本会被<br>圈定，再说技术面试真的考你完全不懂的问题（也有可能在试探你<br>知识的边界也说不定）。<br>    回忆一下，问了什么问题，Vue数据绑定原理，JQuery插件编写，<br>js函数运行的底层表现（栈：最底层window函数），页面显示过程，Ajax原生，<br>响应式，自适应原生，个人项目经历，个人简介，比较奇怪，<br>本以为会问JS三大特性，然而并没有。回调函数，做搜索框，<br>回头一看这些问题，不好好准备还真答不完整。<br>    如何应对接下来的面试，1.在上述选定的范围结合此次的面试问题<br>做下二度解决，抓紧继续回收自己的简历内容。<br>    后记：随着提前批的过去，正式批笔试面试多重，随着时间的前进<br>对招聘的难度也会上升，从而会有精力不足必须缩小范围。最好的结果<br>当然是找个优秀企业，努力准备，然后二面通关。毕竟人生苦短，不如<br>踏春风游万水千山，悠哉游哉。</p>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-
-
-	<div>
-	  
-	</div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
-        
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.hanshang.xyz/2019/08/09/执行上下文栈/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="HanShang">
-      <meta itemprop="description" content="为自己加油">
-      <meta itemprop="image" content="/images/author.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HS博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/08/09/执行上下文栈/" class="post-title-link" itemprop="url">执行上下文栈</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-08-09 10:04:16 / 修改时间：10:07:36" itemprop="dateCreated datePublished" datetime="2019-08-09T10:04:16+08:00">2019-08-09</time>
-            </span>
-          
-
-          
-            
-
-            
-          
-
-          
-
-          
-          
-
-          
-
-          
-            
-  
-  <span class="post-meta-item">
-    
-    <span class="post-meta-item-icon">
-      <i class="fa fa-comment-o"></i>
-    </span>
-    
-      <span class="post-meta-item-text">评论数：</span>
-    
-  
-    <a href="/2019/08/09/执行上下文栈/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/09/执行上下文栈/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <pre><code>1. 代码分类(位置)
-  * 全局代码
-  * 函数(局部)代码
-2. 全局执行上下文
-  * 在执行全局代码前将window确定为全局执行上下文
-  * 对全局数据进行预处理
-    * var定义的全局变量==&gt;undefined, 添加为window的属性
-    * function声明的全局函数==&gt;赋值(fun), 添加为window的方法
-    * this==&gt;赋值(window)
-  * 开始执行全局代码
-3. 函数执行上下文
-  * 在调用函数, 准备执行函数体之前, 创建对应的函数执行上下文对象(虚拟的, 存在于栈中)
-  * 对局部数据进行预处理
-    * 形参变量==&gt;赋值(实参)==&gt;添加为执行上下文的属性
-    * arguments==&gt;赋值(实参列表), 添加为执行上下文的属性
-    * var定义的局部变量==&gt;undefined, 添加为执行上下文的属性
-    * function声明的函数 ==&gt;赋值(fun), 添加为执行上下文的方法
-    * this==&gt;赋值(调用函数的对象)
-  * 开始执行函数体代码
-
-进一步理解
-1. 在全局代码执行前, JS引擎就会创建一个栈来存储管理所有的执行上下文对象
-2. 在全局执行上下文(window)确定后, 将其添加到栈中(压栈)
-3. 在函数执行上下文创建后, 将其添加到栈中(压栈)
-4. 在当前函数执行完后,将栈顶的对象移除(出栈)
-5. 当所有的代码执行完后, 栈中只剩下window</code></pre>
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-
-
-	<div>
-	  
-	</div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -2234,7 +2208,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-count">31</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
