@@ -99,19 +99,17 @@
   };
 </script>
 
-  <meta name="description" content="图示如下原型链总结四句话。1.函数的原型对象的prototype是其实例对象的proto2.所有的函数对象，都是new Function()出来的（包括自身）3.每个函数都有一个prototype属性, 它默认指向一个Object空对象(即称为: 原型对象)（Object对象除外）4.Object的原型对象的_proto_为null即原型链的尽头">
+  <meta name="description" content="这篇博客也不错https://blog.csdn.net/weixin_42387953/article/details/83040751 原生js1234567891011121314151617181920212223(function() &amp;#123;  //发送异步请求  //1.创建ajax引擎对象---所有的操作由ajax引擎完成  var xmlHttp = new XMLHttpR">
 <meta property="og:type" content="article">
-<meta property="og:title" content="原型链总结">
-<meta property="og:url" content="https://www.hanshang.xyz/2019/08/08/原型链总结/index.html">
+<meta property="og:title" content="原生ajax和JQuery_ajax">
+<meta property="og:url" content="https://www.hanshang.xyz/2019/08/24/原生ajax和JQuery-ajax/index.html">
 <meta property="og:site_name" content="HS博客">
-<meta property="og:description" content="图示如下原型链总结四句话。1.函数的原型对象的prototype是其实例对象的proto2.所有的函数对象，都是new Function()出来的（包括自身）3.每个函数都有一个prototype属性, 它默认指向一个Object空对象(即称为: 原型对象)（Object对象除外）4.Object的原型对象的_proto_为null即原型链的尽头">
+<meta property="og:description" content="这篇博客也不错https://blog.csdn.net/weixin_42387953/article/details/83040751 原生js1234567891011121314151617181920212223(function() &amp;#123;  //发送异步请求  //1.创建ajax引擎对象---所有的操作由ajax引擎完成  var xmlHttp = new XMLHttpR">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://s2.ax1x.com/2019/08/08/eoyRu6.png">
-<meta property="og:updated_time" content="2019-08-08T01:50:45.448Z">
+<meta property="og:updated_time" content="2019-08-24T03:28:08.272Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="原型链总结">
-<meta name="twitter:description" content="图示如下原型链总结四句话。1.函数的原型对象的prototype是其实例对象的proto2.所有的函数对象，都是new Function()出来的（包括自身）3.每个函数都有一个prototype属性, 它默认指向一个Object空对象(即称为: 原型对象)（Object对象除外）4.Object的原型对象的_proto_为null即原型链的尽头">
-<meta name="twitter:image" content="https://s2.ax1x.com/2019/08/08/eoyRu6.png">
+<meta name="twitter:title" content="原生ajax和JQuery_ajax">
+<meta name="twitter:description" content="这篇博客也不错https://blog.csdn.net/weixin_42387953/article/details/83040751 原生js1234567891011121314151617181920212223(function() &amp;#123;  //发送异步请求  //1.创建ajax引擎对象---所有的操作由ajax引擎完成  var xmlHttp = new XMLHttpR">
 
 
 
@@ -119,7 +117,7 @@
 
   
   
-  <link rel="canonical" href="https://www.hanshang.xyz/2019/08/08/原型链总结/">
+  <link rel="canonical" href="https://www.hanshang.xyz/2019/08/24/原生ajax和JQuery-ajax/">
 
 
 
@@ -130,7 +128,7 @@
 </script>
 
   
-  <title>原型链总结 | HS博客</title>
+  <title>原生ajax和JQuery_ajax | HS博客</title>
   
 
 
@@ -373,7 +371,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.hanshang.xyz/2019/08/08/原型链总结/">
+    <link itemprop="mainEntityOfPage" href="https://www.hanshang.xyz/2019/08/24/原生ajax和JQuery-ajax/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="HanShang">
@@ -390,7 +388,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">原型链总结
+          <h1 class="post-title" itemprop="name headline">原生ajax和JQuery_ajax
 
               
             
@@ -416,7 +414,7 @@
                 
               
 
-              <time title="创建时间：2019-08-08 09:42:33 / 修改时间：09:50:45" itemprop="dateCreated datePublished" datetime="2019-08-08T09:42:33+08:00">2019-08-08</time>
+              <time title="创建时间：2019-08-24 09:59:59 / 修改时间：11:28:08" itemprop="dateCreated datePublished" datetime="2019-08-24T09:59:59+08:00">2019-08-24</time>
             </span>
           
 
@@ -453,8 +451,8 @@
       <span class="post-meta-item-text">评论数：</span>
     
   
-    <a href="/2019/08/08/原型链总结/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/08/原型链总结/" itemprop="commentCount"></span>
+    <a href="/2019/08/24/原生ajax和JQuery-ajax/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/24/原生ajax和JQuery-ajax/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -481,7 +479,11 @@
       
 
       
-        <p>图示如下<br><img src="https://s2.ax1x.com/2019/08/08/eoyRu6.png" alt="eoyRu6.png"><br>原型链总结四句话。<br>1.函数的原型对象的prototype是其实例对象的<em>proto</em><br>2.所有的函数对象，都是new Function()出来的（包括自身）<br>3.每个函数都有一个prototype属性, 它默认指向一个Object空对象(即称为: 原型对象)（Object对象除外）<br>4.Object的原型对象的_proto_为null即原型链的尽头</p>
+        <h5 id="这篇博客也不错"><a href="#这篇博客也不错" class="headerlink" title="这篇博客也不错"></a>这篇博客也不错</h5><p><a href="https://blog.csdn.net/weixin_42387953/article/details/83040751" target="_blank" rel="noopener">https://blog.csdn.net/weixin_42387953/article/details/83040751</a></p>
+<h3 id="原生js"><a href="#原生js" class="headerlink" title="原生js"></a>原生js</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="comment">//发送异步请求</span></span><br><span class="line">  <span class="comment">//1.创建ajax引擎对象---所有的操作由ajax引擎完成</span></span><br><span class="line">  <span class="keyword">var</span> xmlHttp = <span class="keyword">new</span> XMLHttpRequest()</span><br><span class="line">  <span class="comment">//为引擎绑定事件监听事件</span></span><br><span class="line">  xmlHttp.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(xmlHttp.readyState==<span class="number">4</span>)&#123;</span><br><span class="line">        <span class="keyword">if</span>(xmlHttp.status==<span class="number">200</span>)&#123;</span><br><span class="line">            <span class="keyword">var</span> data = xmlHttp.responseText</span><br><span class="line">            <span class="built_in">console</span>.log(data)</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="string">"失败"</span>)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//3.绑定服务器地址</span></span><br><span class="line">  <span class="comment">//第一个参数GET/POST</span></span><br><span class="line">  <span class="comment">//第二个参数后台服务器地址</span></span><br><span class="line">  <span class="comment">//第三个参数：是否异步, 默认为true, 是异步</span></span><br><span class="line">  xmlHttp.open(<span class="string">'GET'</span>,<span class="string">"https://www.baidu.com&amp;root=1"</span>)</span><br><span class="line">  <span class="comment">//发送请求</span></span><br><span class="line">  xmlHttp.send()</span><br><span class="line">&#125;)()</span><br></pre></td></tr></table></figure>
+
+<h3 id="JQuery"><a href="#JQuery" class="headerlink" title="JQuery"></a>JQuery</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  $.ajax(&#123;</span><br><span class="line">    url: <span class="string">"https:www.baidu.com"</span>,</span><br><span class="line">    type: <span class="string">'GET'</span>,</span><br><span class="line">    data: <span class="string">'user=list&amp;email=111@163.com'</span>,</span><br><span class="line">    success:<span class="function"><span class="keyword">function</span>(<span class="params">res</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'success'</span>,res)</span><br><span class="line">    &#125;,</span><br><span class="line">    errot:<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'false'</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)()</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -520,7 +522,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://www.hanshang.xyz/2019/08/08/原型链总结/" title="原型链总结">https://www.hanshang.xyz/2019/08/08/原型链总结/</a>
+    <a href="https://www.hanshang.xyz/2019/08/24/原生ajax和JQuery-ajax/" title="原生ajax和JQuery_ajax">https://www.hanshang.xyz/2019/08/24/原生ajax和JQuery-ajax/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -554,8 +556,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/07/第一小节js/" rel="next" title="第一小节js">
-                <i class="fa fa-chevron-left"></i> 第一小节js
+              <a href="/2019/08/23/状态码/" rel="next" title="状态吗">
+                <i class="fa fa-chevron-left"></i> 状态吗
               </a>
             
           </div>
@@ -563,10 +565,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/08/09/复习巩固ES6/" rel="prev" title="复习巩固ES6">
-                复习巩固ES6 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -611,9 +609,18 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=5261426&auto=0&height=66"></iframe>
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -736,6 +743,23 @@
           
         </div>
       </div>
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#这篇博客也不错"><span class="nav-number">1.</span> <span class="nav-text">这篇博客也不错</span></a></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#原生js"><span class="nav-number"></span> <span class="nav-text">原生js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JQuery"><span class="nav-number"></span> <span class="nav-text">JQuery</span></a></li></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
