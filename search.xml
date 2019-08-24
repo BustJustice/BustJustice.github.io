@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>运算符优先级</title>
+      <link href="/2019/08/24/%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7/"/>
+      <url>/2019/08/24/%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title> 网络攻击的几种方式</title>
+      <link href="/2019/08/24/%E7%BD%91%E7%BB%9C%E6%94%BB%E5%87%BB%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/"/>
+      <url>/2019/08/24/%E7%BD%91%E7%BB%9C%E6%94%BB%E5%87%BB%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E5%BC%8F/</url>
+      
+        <content type="html"><![CDATA[<h4 id="DNS欺骗-域名污染"><a href="#DNS欺骗-域名污染" class="headerlink" title="DNS欺骗(域名污染)"></a>DNS欺骗(域名污染)</h4><p>简单的说就是改变了域名解析指向的IP地址<br>详情见：<a href="https://blog.csdn.net/qq754406613/article/details/43649007" target="_blank" rel="noopener">https://blog.csdn.net/qq754406613/article/details/43649007</a></p><h4 id="XSS攻击"><a href="#XSS攻击" class="headerlink" title="XSS攻击"></a>XSS攻击</h4><p>简单的说就是通过插入恶意脚本，实现对用户游览器的控制。<br>详情见：<a href="https://www.cnblogs.com/bangerlee/archive/2013/04/06/3002142.html" target="_blank" rel="noopener">https://www.cnblogs.com/bangerlee/archive/2013/04/06/3002142.html</a></p><h4 id="DDos攻击"><a href="#DDos攻击" class="headerlink" title="DDos攻击"></a>DDos攻击</h4><p>详情见：<a href="https://www.cnblogs.com/2myroad/articles/3881042.html" target="_blank" rel="noopener">https://www.cnblogs.com/2myroad/articles/3881042.html</a><br>SYN Flood攻击利用了TCP三次握手的缺陷，能够以较小代价使目标服务器无法响应<br>DNS Query Flood就是攻击者操纵大量傀儡机器，对目标发起海量的域名查询请求。<br>HTTP Flood（CC攻击）攻击者通过匿名代理对攻击目标发起HTTP请求。</p><h4 id="域名劫持"><a href="#域名劫持" class="headerlink" title="域名劫持"></a>域名劫持</h4><p>详情见：<a href="https://www.jb51.net/network/353770.html" target="_blank" rel="noopener">https://www.jb51.net/network/353770.html</a><br>域名服务器上都会保存一大堆的域名记录（每条记录包含“域名”和“IP地址”）。<br>当收到域名查询的时候，域名服务器会从这堆记录中找到对方想要的，然后回应给对方。<br>如果域名服务器上的某条记录被【人为修改】了（改成错的），<br>那么一旦要查询这条记录，得到的就是错误的结果。这种情况称之为“域名劫持”。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>原生ajax和JQuery_ajax</title>
       <link href="/2019/08/24/%E5%8E%9F%E7%94%9Fajax%E5%92%8CJQuery-ajax/"/>
       <url>/2019/08/24/%E5%8E%9F%E7%94%9Fajax%E5%92%8CJQuery-ajax/</url>
