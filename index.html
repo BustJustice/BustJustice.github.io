@@ -371,6 +371,199 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.hanshang.xyz/2019/08/27/正则拾遗/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="HanShang">
+      <meta itemprop="description" content="为自己加油">
+      <meta itemprop="image" content="/images/author.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HS博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/27/正则拾遗/" class="post-title-link" itemprop="url">正则拾遗</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-27 23:00:44" itemprop="dateCreated datePublished" datetime="2019-08-27T23:00:44+08:00">2019-08-27</time>
+            </span>
+          
+
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-30 10:36:18" itemprop="dateModified" datetime="2019-08-30T10:36:18+08:00">2019-08-30</time>
+              </span>
+            
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/web前端/" itemprop="url" rel="index"><span itemprop="name">web前端</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+          
+
+          
+
+          
+            
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="fa fa-comment-o"></i>
+    </span>
+    
+      <span class="post-meta-item-text">评论数：</span>
+    
+  
+    <a href="/2019/08/27/正则拾遗/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/27/正则拾遗/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//g 开启全局匹配，使用正则对象的lastIndex作为索引，找不到，重置为0</span></span><br><span class="line"><span class="keyword">var</span> tmp</span><br><span class="line"><span class="keyword">var</span> re = <span class="regexp">/[a-z]&#123;1,4&#125;/ig</span></span><br><span class="line"><span class="keyword">while</span> ((tmp = re.exec(<span class="string">'iT is a word'</span>)) != <span class="literal">null</span>) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(tmp)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// match和exec基本一致，除了用g不必循环</span></span><br><span class="line"><span class="keyword">var</span> s = <span class="string">"The rain in Spain falls mainly in the plain"</span>;</span><br><span class="line">re = <span class="regexp">/(a)in/ig</span>; <span class="comment">// 创建正则表达式模式。</span></span><br><span class="line"><span class="keyword">while</span> ((tmp = re.exec(s)) != <span class="literal">null</span>) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(tmp)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// ()是一个子匹配项 match不会出现子匹配，exec会出现</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// test检验正则表达式是否与字符串匹配 /g同理lastIndex</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="regexp">/llo$/</span>.test(<span class="string">'i am hello'</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment">//matchAll()一个结合上述两个优点的 函数</span></span><br><span class="line"><span class="comment">//1.能迭代</span></span><br><span class="line"><span class="keyword">const</span> regexp = <span class="built_in">RegExp</span>(<span class="string">'foo*'</span>, <span class="string">'g'</span>);</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">'table football, foosball'</span>;</span><br><span class="line"><span class="keyword">let</span> matches = str.matchAll(regexp)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> match <span class="keyword">of</span> matches) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(match);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//2.匹配分组</span></span><br><span class="line"><span class="keyword">let</span> array = [...str.matchAll(regexp)];</span><br><span class="line"></span><br><span class="line"><span class="comment">//array[0];</span></span><br><span class="line"><span class="comment">// ['test1', 'e', 'st1', '1', index: 0, input: 'test1test2', length: 4]</span></span><br><span class="line"><span class="comment">//array[1];</span></span><br><span class="line"><span class="comment">// ['test2', 'e', 'st2', '2', index: 5, input: 'test1test2', length: 4]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Array.from(被转换的的对象,map处理函数，map函数中this指向)</span></span><br><span class="line"><span class="comment">//详见https://www.cnblogs.com/kongxianghai/p/7417210.html</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">"hey JudE"</span>;</span><br><span class="line"><span class="keyword">var</span> re = <span class="regexp">/[A-Z]/g</span>;</span><br><span class="line"><span class="keyword">var</span> re2 = <span class="regexp">/[.]/g</span>;</span><br><span class="line"><span class="built_in">console</span>.log(str.search(re)); <span class="comment">// returns 4, which is the index of the first capital letter "J"</span></span><br><span class="line"><span class="built_in">console</span>.log(str.search(re2)); <span class="comment">// returns -1 cannot find '.' dot punctuation</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//replace</span></span><br><span class="line"><span class="keyword">var</span> res = <span class="string">"jojo dio"</span>.replace(<span class="regexp">/(\w+)\s+(\w+)/</span>, <span class="string">"$2 $1"</span>)</span><br><span class="line"><span class="built_in">console</span>.log(res)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">toUpper</span>(<span class="params">match, p1, p2, offset, string</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> match.toUpperCase()</span><br><span class="line">&#125;</span><br><span class="line">res = <span class="string">"pack dio-dd"</span>.replace(<span class="regexp">/(\w+)\s+(\w+)/</span>,toUpper)</span><br><span class="line"><span class="built_in">console</span>.log(res)</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="regexp">/\+/</span>.exec(<span class="string">'+s+1'</span>))</span><br></pre></td></tr></table></figure>
+
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+
+
+	<div>
+	  
+	</div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://www.hanshang.xyz/2019/08/24/cookies-sessionStorage-localStorage/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2204,306 +2397,6 @@
   </article>
 
     
-        
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.hanshang.xyz/2019/08/22/CSS3与HTML5新增标签/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="HanShang">
-      <meta itemprop="description" content="为自己加油">
-      <meta itemprop="image" content="/images/author.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="HS博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/08/22/CSS3与HTML5新增标签/" class="post-title-link" itemprop="url">CSS3与HTML5新增标签</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-
-          
-          
-          
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-08-22 22:52:56" itemprop="dateCreated datePublished" datetime="2019-08-22T22:52:56+08:00">2019-08-22</time>
-            </span>
-          
-
-          
-            
-
-            
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-08-24 14:39:33" itemprop="dateModified" datetime="2019-08-24T14:39:33+08:00">2019-08-24</time>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-
-          
-            
-  
-  <span class="post-meta-item">
-    
-    <span class="post-meta-item-icon">
-      <i class="fa fa-comment-o"></i>
-    </span>
-    
-      <span class="post-meta-item-text">评论数：</span>
-    
-  
-    <a href="/2019/08/22/CSS3与HTML5新增标签/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/22/CSS3与HTML5新增标签/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-          
-
-          <br>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>###HTML5新增标签</p>
-<table>
-<thead>
-<tr>
-<th>新增元素</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>video</td>
-<td>表示一段视频并且提供播放的用户界面</td>
-</tr>
-<tr>
-<td>audio</td>
-<td>表示音频</td>
-</tr>
-<tr>
-<td>canvas</td>
-<td>表示位图区域 (就是块级元素，勿虑)</td>
-</tr>
-<tr>
-<td>source</td>
-<td>为video和audio提供数据源</td>
-</tr>
-<tr>
-<td>track</td>
-<td>为video和audio指定字母</td>
-</tr>
-<tr>
-<td>svg</td>
-<td>定义矢量图</td>
-</tr>
-<tr>
-<td>code</td>
-<td>代码段</td>
-</tr>
-<tr>
-<td>figure</td>
-<td>和文档有关的图例</td>
-</tr>
-<tr>
-<td>figcaption</td>
-<td>图例的说明</td>
-</tr>
-<tr>
-<td>main</td>
-<td>主内容区</td>
-</tr>
-<tr>
-<td>time</td>
-<td>日期和时间值</td>
-</tr>
-<tr>
-<td>mark</td>
-<td>高亮的引用文字</td>
-</tr>
-<tr>
-<td>datalist</td>
-<td>提供给其他空间的预定义选项</td>
-</tr>
-<tr>
-<td>keygen</td>
-<td>密钥对生成器空间</td>
-</tr>
-<tr>
-<td>output</td>
-<td>计算值</td>
-</tr>
-<tr>
-<td>progress</td>
-<td>进度条</td>
-</tr>
-<tr>
-<td>menu</td>
-<td>菜单</td>
-</tr>
-<tr>
-<td>embed</td>
-<td>嵌入的外部资源</td>
-</tr>
-<tr>
-<td>menuitem</td>
-<td>用户可以点击的菜单项</td>
-</tr>
-<tr>
-<td>menu</td>
-<td>菜单</td>
-</tr>
-<tr>
-<td>template</td>
-<td>声明是模块元素</td>
-</tr>
-<tr>
-<td>section</td>
-<td>独立内容区块</td>
-</tr>
-<tr>
-<td>nav</td>
-<td>导航条部分信息</td>
-</tr>
-<tr>
-<td>aside</td>
-<td>标签内容之外的与标签内容相关的辅助信息</td>
-</tr>
-<tr>
-<td>article</td>
-<td>特殊独立区块表示这篇页眉的核心内容</td>
-</tr>
-<tr>
-<td>footer/header</td>
-<td>底部信息/头部信息</td>
-</tr>
-</tbody></table>
-<p>###CSS3<br>CSS3被划分成模块，最重要的几个模块包括：选择器，框模型，<br>背景和边框，文本效果，2D3D转换，动画，多列布局，用户界面 </p>
-<ul>
-<li>选择器</li>
-<li>框模型</li>
-<li>背景和边框<br>  border-radius,box-shadow,border-image<br>  background-size:规定背景图片的尺寸<br>  background-origin:规定背景图片的定位区域<br>  background-clip:规定背景的绘制区域</li>
-<li>文本效果（常用）<br>  text-shadow:设置文字阴影<br>  word-wrap:强制换行<br>  word-break<br>  css3提出@font-face规则，规则中定义了font-family，font-weight，<br>  font-style，font-stretch，src，unicode-range</li>
-<li>2D3D转换<br>  transform：向元素应用2/3D转换<br>  transition：过渡</li>
-<li>动画</li>
-<li>@keyframes规则<br>  animation，animation-name，animation-duration</li>
-<li>用户界面（常用）<br>  box-sizeing，resize<br>####css3新增伪类<br>  : nth-child<br>  : nth-last-child()<br>  : only-child<br>  : last-child<br>  : nth-of-type()<br>  : only-of-type()<br>  : empty<br>  : target这个伪类允许我们选择基于URL的元素如果这个元素有一个识别器<br>  （#target）那么这个:target就会对这个ID识别器的元素增加样式<br>  : enabled<br>  : disabled<br>  : checked<br>  : not<br>###H5不再支持的标签<br>  1.acronym （建议abbr）：定义首字母缩写<br>  2.applet （建议object）：定义applet<br>  3.basefont(使用css控制)<br>  4.big(使用css控制)：定义大号文本<br>  5.center（使用css控制）：定义居中文本<br>  6.font（使用css控制）<br>  7.strike(使用del):定义加删除线的文本<br>  8.tt(使用css控制)：定义打字机文本<br>  9.u(使用css控制)：定义下划线文本<br>  10.frame(建议iframe):定义子窗口<br>  11.frameset：定义框架的集<br>  12.noframes：定义noframe部分<br>  13.dir:定义目录列表<br>  14.xmp:定义预格式文本<br>  15.isindex：定义单行的输入域</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-
-
-	<div>
-	  
-	</div>
-
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-    
   </section>
 
   
@@ -2554,7 +2447,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-count">26</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -2573,7 +2466,9 @@
         
           
         
-        <span class="site-state-item-count">1</span>
+          
+        
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span>
         </a>
       </div>
@@ -2596,7 +2491,9 @@
         
           
         
-        <span class="site-state-item-count">3</span>
+          
+        
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span>
         </a>
       </div>
