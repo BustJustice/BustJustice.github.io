@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>新的开始</title>
+      <link href="/2020/04/29/%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/"/>
+      <url>/2020/04/29/%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/</url>
+      
+        <content type="html"><![CDATA[<h2 id="希望明天会更好"><a href="#希望明天会更好" class="headerlink" title="希望明天会更好"></a>希望明天会更好</h2><pre><code>1.找到了工作不过由于疫情的影响，入职拖延到7月2.在空闲时，了解了react，redux，hooks等是拓展也是复习3.博客也算是一个存放知识的好地方，起码寻找很方便，应该加以利用4.前端是个坑，欢迎大家入坑 :)</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 心得体会 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 久违的发布 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>正则拾遗</title>
       <link href="/2019/08/27/%E6%AD%A3%E5%88%99%E6%8B%BE%E9%81%97/"/>
       <url>/2019/08/27/%E6%AD%A3%E5%88%99%E6%8B%BE%E9%81%97/</url>
@@ -60,19 +85,6 @@
       <url>/2019/08/24/use-strict%E6%9C%89%E5%93%AA%E4%BA%9B%E5%BD%B1%E5%93%8D/</url>
       
         <content type="html"><![CDATA[<p>详见：阮一峰日志<br><a href="http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2013/01/javascript_strict_mode.html</a></p><h3 id="常见影响"><a href="#常见影响" class="headerlink" title="常见影响"></a>常见影响</h3><p>1.使用变量必须显示声明var let<br>2.禁止with语句<br>3.创建eval作用域<br>4.禁止this指向全局对象<br>5.禁止删除变量<br>6.不得重名属性方法<br>7.禁止八进制表示<br>8.对arguments对象限制<br>9.严格模式新增了一些保留字：<br>  implements, interface, let, package, private, protected, public, static, yield。<br>  使用这些词作为变量名将会报错。</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>运算符优先级</title>
-      <link href="/2019/08/24/%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7/"/>
-      <url>/2019/08/24/%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7/</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
       
       
