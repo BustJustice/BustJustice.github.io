@@ -99,18 +99,17 @@
   };
 </script>
 
-  <meta name="description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354//g 开启全局匹配，使用正则对象的lastIndex作为索引，找不到，重置为0var tmpvar re = /[a-z]&amp;#123;1,4&amp;#125;/igwhile ((tmp = re.exec">
-<meta name="keywords" content="正则">
+  <meta name="description" content="作用域链的创建函数的作用域在函数定义的时候就决定了1.函数创建阶段，因为函数有一个内部属性[[scope]]，在函数创建的时候，就会保存所有父变量对象到其中，可以理解[[scope]]就是所有父变量的层级链，但是注意[[scope]]不代表完整的作用域链 2.函数激活，进入函数的上下文，创建VO/AO后，就会将活动对象添加到作用域链的前端 执行上下文的生命周期如下 创建{生成变量对象，简历作用域链">
 <meta property="og:type" content="article">
-<meta property="og:title" content="正则拾遗">
-<meta property="og:url" content="https://www.hanshang.xyz/2019/08/27/正则拾遗/index.html">
+<meta property="og:title" content="执行上下文作用域链闭包">
+<meta property="og:url" content="https://www.hanshang.xyz/2020/12/12/执行上下文作用域链闭包/index.html">
 <meta property="og:site_name" content="HS博客">
-<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354//g 开启全局匹配，使用正则对象的lastIndex作为索引，找不到，重置为0var tmpvar re = /[a-z]&amp;#123;1,4&amp;#125;/igwhile ((tmp = re.exec">
+<meta property="og:description" content="作用域链的创建函数的作用域在函数定义的时候就决定了1.函数创建阶段，因为函数有一个内部属性[[scope]]，在函数创建的时候，就会保存所有父变量对象到其中，可以理解[[scope]]就是所有父变量的层级链，但是注意[[scope]]不代表完整的作用域链 2.函数激活，进入函数的上下文，创建VO/AO后，就会将活动对象添加到作用域链的前端 执行上下文的生命周期如下 创建{生成变量对象，简历作用域链">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-30T04:15:13.457Z">
+<meta property="og:updated_time" content="2020-12-16T09:43:53.324Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="正则拾遗">
-<meta name="twitter:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354//g 开启全局匹配，使用正则对象的lastIndex作为索引，找不到，重置为0var tmpvar re = /[a-z]&amp;#123;1,4&amp;#125;/igwhile ((tmp = re.exec">
+<meta name="twitter:title" content="执行上下文作用域链闭包">
+<meta name="twitter:description" content="作用域链的创建函数的作用域在函数定义的时候就决定了1.函数创建阶段，因为函数有一个内部属性[[scope]]，在函数创建的时候，就会保存所有父变量对象到其中，可以理解[[scope]]就是所有父变量的层级链，但是注意[[scope]]不代表完整的作用域链 2.函数激活，进入函数的上下文，创建VO/AO后，就会将活动对象添加到作用域链的前端 执行上下文的生命周期如下 创建{生成变量对象，简历作用域链">
 
 
 
@@ -118,7 +117,7 @@
 
   
   
-  <link rel="canonical" href="https://www.hanshang.xyz/2019/08/27/正则拾遗/">
+  <link rel="canonical" href="https://www.hanshang.xyz/2020/12/12/执行上下文作用域链闭包/">
 
 
 
@@ -129,7 +128,7 @@
 </script>
 
   
-  <title>正则拾遗 | HS博客</title>
+  <title>执行上下文作用域链闭包 | HS博客</title>
   
 
 
@@ -372,7 +371,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.hanshang.xyz/2019/08/27/正则拾遗/">
+    <link itemprop="mainEntityOfPage" href="https://www.hanshang.xyz/2020/12/12/执行上下文作用域链闭包/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="HanShang">
@@ -389,7 +388,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">正则拾遗
+          <h1 class="post-title" itemprop="name headline">执行上下文作用域链闭包
 
               
             
@@ -415,7 +414,7 @@
                 
               
 
-              <time title="创建时间：2019-08-27 23:00:44" itemprop="dateCreated datePublished" datetime="2019-08-27T23:00:44+08:00">2019-08-27</time>
+              <time title="创建时间：2020-12-12 14:55:29" itemprop="dateCreated datePublished" datetime="2020-12-12T14:55:29+08:00">2020-12-12</time>
             </span>
           
 
@@ -430,26 +429,11 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-08-30 12:15:13" itemprop="dateModified" datetime="2019-08-30T12:15:13+08:00">2019-08-30</time>
+                <time title="修改时间：2020-12-16 17:43:53" itemprop="dateModified" datetime="2020-12-16T17:43:53+08:00">2020-12-16</time>
               </span>
             
           
 
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/web前端/" itemprop="url" rel="index"><span itemprop="name">web前端</span></a></span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -477,8 +461,8 @@
       <span class="post-meta-item-text">评论数：</span>
     
   
-    <a href="/2019/08/27/正则拾遗/#comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/27/正则拾遗/" itemprop="commentCount"></span>
+    <a href="/2020/12/12/执行上下文作用域链闭包/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2020/12/12/执行上下文作用域链闭包/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -505,8 +489,10 @@
       
 
       
-        <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//g 开启全局匹配，使用正则对象的lastIndex作为索引，找不到，重置为0</span></span><br><span class="line"><span class="keyword">var</span> tmp</span><br><span class="line"><span class="keyword">var</span> re = <span class="regexp">/[a-z]&#123;1,4&#125;/ig</span></span><br><span class="line"><span class="keyword">while</span> ((tmp = re.exec(<span class="string">'iT is a word'</span>)) != <span class="literal">null</span>) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(tmp)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// match和exec基本一致，除了用g不必循环</span></span><br><span class="line"><span class="keyword">var</span> s = <span class="string">"The rain in Spain falls mainly in the plain"</span>;</span><br><span class="line">re = <span class="regexp">/(a)in/ig</span>; <span class="comment">// 创建正则表达式模式。</span></span><br><span class="line"><span class="keyword">while</span> ((tmp = re.exec(s)) != <span class="literal">null</span>) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(tmp)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// ()是一个子匹配项 match不会出现子匹配，exec会出现</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// test检验正则表达式是否与字符串匹配 /g同理lastIndex</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="regexp">/llo$/</span>.test(<span class="string">'i am hello'</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment">//matchAll()一个结合上述两个优点的 函数</span></span><br><span class="line"><span class="comment">//1.能迭代</span></span><br><span class="line"><span class="keyword">const</span> regexp = <span class="built_in">RegExp</span>(<span class="string">'foo*'</span>, <span class="string">'g'</span>);</span><br><span class="line"><span class="keyword">var</span> str = <span class="string">'table football, foosball'</span>;</span><br><span class="line"><span class="keyword">let</span> matches = str.matchAll(regexp)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">const</span> match <span class="keyword">of</span> matches) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(match);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//2.匹配分组</span></span><br><span class="line"><span class="keyword">let</span> array = [...str.matchAll(regexp)];</span><br><span class="line"></span><br><span class="line"><span class="comment">//array[0];</span></span><br><span class="line"><span class="comment">// ['test1', 'e', 'st1', '1', index: 0, input: 'test1test2', length: 4]</span></span><br><span class="line"><span class="comment">//array[1];</span></span><br><span class="line"><span class="comment">// ['test2', 'e', 'st2', '2', index: 5, input: 'test1test2', length: 4]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Array.from(被转换的的对象,map处理函数，map函数中this指向)</span></span><br><span class="line"><span class="comment">//详见https://www.cnblogs.com/kongxianghai/p/7417210.html</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> str = <span class="string">"hey JudE"</span>;</span><br><span class="line"><span class="keyword">var</span> re = <span class="regexp">/[A-Z]/g</span>;</span><br><span class="line"><span class="keyword">var</span> re2 = <span class="regexp">/[.]/g</span>;</span><br><span class="line"><span class="built_in">console</span>.log(str.search(re)); <span class="comment">// returns 4, which is the index of the first capital letter "J"</span></span><br><span class="line"><span class="built_in">console</span>.log(str.search(re2)); <span class="comment">// returns -1 cannot find '.' dot punctuation</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//replace</span></span><br><span class="line"><span class="keyword">var</span> res = <span class="string">"jojo dio"</span>.replace(<span class="regexp">/(\w+)\s+(\w+)/</span>, <span class="string">"$2 $1"</span>)</span><br><span class="line"><span class="built_in">console</span>.log(res)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">toUpper</span>(<span class="params">match, p1, p2, offset, string</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">return</span> match.toUpperCase()</span><br><span class="line">&#125;</span><br><span class="line">res = <span class="string">"pack dio-dd"</span>.replace(<span class="regexp">/(\w+)\s+(\w+)/</span>,toUpper)</span><br><span class="line"><span class="built_in">console</span>.log(res)</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(<span class="regexp">/\+/</span>.exec(<span class="string">'+s+1'</span>))</span><br></pre></td></tr></table></figure>
-
+        <h4 id="作用域链的创建"><a href="#作用域链的创建" class="headerlink" title="作用域链的创建"></a>作用域链的创建</h4><p>函数的作用域在函数定义的时候就决定了<br>1.函数创建阶段，因为函数有一个内部属性[[scope]]，<br>在函数创建的时候，就会保存所有父变量对象到其中，<br>可以理解[[scope]]就是所有父变量的层级链，但是注意[[scope]]不代表完整的作用域链</p>
+<p>2.函数激活，进入函数的上下文，创建VO/AO后，就会将活动对象添加到作用域链的前端</p>
+<p>执行上下文的生命周期如下</p>
+<p>创建{生成变量对象，简历作用域链，确定this指向}<br>执行{变量赋值，函数引用，执行其他代码}<br>执行完毕后出栈</p>
 
       
     </div>
@@ -545,7 +531,7 @@
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
     
-    <a href="https://www.hanshang.xyz/2019/08/27/正则拾遗/" title="正则拾遗">https://www.hanshang.xyz/2019/08/27/正则拾遗/</a>
+    <a href="https://www.hanshang.xyz/2020/12/12/执行上下文作用域链闭包/" title="执行上下文作用域链闭包">https://www.hanshang.xyz/2020/12/12/执行上下文作用域链闭包/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
@@ -570,15 +556,6 @@
 
     <footer class="post-footer">
       
-        
-          
-        
-        <div class="post-tags">
-          
-            <a href="/tags/正则/" rel="tag"># 正则</a>
-          
-        </div>
-      
 
       
       
@@ -588,8 +565,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/08/24/cookies-sessionStorage-localStorage/" rel="next" title="cookies&sessionStorage&localStorage">
-                <i class="fa fa-chevron-left"></i> cookies&sessionStorage&localStorage
+              <a href="/2020/12/12/我所面临的重大问题/" rel="next" title="我所面临的重大问题">
+                <i class="fa fa-chevron-left"></i> 我所面临的重大问题
               </a>
             
           </div>
@@ -598,8 +575,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2020/04/29/新的开始/" rel="prev" title="新的开始">
-                新的开始 <i class="fa fa-chevron-right"></i>
+              <a href="/2020/12/12/this-call-apply-bind/" rel="prev" title="this/call/apply/bind">
+                this/call/apply/bind <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -645,9 +622,18 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=5261426&auto=0&height=66"></iframe>
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -776,6 +762,23 @@
           
         </div>
       </div>
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#作用域链的创建"><span class="nav-number">1.</span> <span class="nav-text">作用域链的创建</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

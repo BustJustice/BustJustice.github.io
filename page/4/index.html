@@ -371,6 +371,930 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.hanshang.xyz/2019/08/09/执行上下文栈/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="HanShang">
+      <meta itemprop="description" content="为自己加油">
+      <meta itemprop="image" content="/images/author.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HS博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/09/执行上下文栈/" class="post-title-link" itemprop="url">执行上下文栈</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-09 10:04:16 / 修改时间：10:07:36" itemprop="dateCreated datePublished" datetime="2019-08-09T10:04:16+08:00">2019-08-09</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+            
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="fa fa-comment-o"></i>
+    </span>
+    
+      <span class="post-meta-item-text">评论数：</span>
+    
+  
+    <a href="/2019/08/09/执行上下文栈/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/09/执行上下文栈/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <pre><code>1. 代码分类(位置)
+  * 全局代码
+  * 函数(局部)代码
+2. 全局执行上下文
+  * 在执行全局代码前将window确定为全局执行上下文
+  * 对全局数据进行预处理
+    * var定义的全局变量==&gt;undefined, 添加为window的属性
+    * function声明的全局函数==&gt;赋值(fun), 添加为window的方法
+    * this==&gt;赋值(window)
+  * 开始执行全局代码
+3. 函数执行上下文
+  * 在调用函数, 准备执行函数体之前, 创建对应的函数执行上下文对象(虚拟的, 存在于栈中)
+  * 对局部数据进行预处理
+    * 形参变量==&gt;赋值(实参)==&gt;添加为执行上下文的属性
+    * arguments==&gt;赋值(实参列表), 添加为执行上下文的属性
+    * var定义的局部变量==&gt;undefined, 添加为执行上下文的属性
+    * function声明的函数 ==&gt;赋值(fun), 添加为执行上下文的方法
+    * this==&gt;赋值(调用函数的对象)
+  * 开始执行函数体代码
+
+进一步理解
+1. 在全局代码执行前, JS引擎就会创建一个栈来存储管理所有的执行上下文对象
+2. 在全局执行上下文(window)确定后, 将其添加到栈中(压栈)
+3. 在函数执行上下文创建后, 将其添加到栈中(压栈)
+4. 在当前函数执行完后,将栈顶的对象移除(出栈)
+5. 当所有的代码执行完后, 栈中只剩下window</code></pre>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+
+
+	<div>
+	  
+	</div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.hanshang.xyz/2019/08/09/复习巩固ES6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="HanShang">
+      <meta itemprop="description" content="为自己加油">
+      <meta itemprop="image" content="/images/author.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HS博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/09/复习巩固ES6/" class="post-title-link" itemprop="url">复习巩固ES6</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-09 09:29:23 / 修改时间：10:02:57" itemprop="dateCreated datePublished" datetime="2019-08-09T09:29:23+08:00">2019-08-09</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+            
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="fa fa-comment-o"></i>
+    </span>
+    
+      <span class="post-meta-item-text">评论数：</span>
+    
+  
+    <a href="/2019/08/09/复习巩固ES6/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/09/复习巩固ES6/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <pre><code>严格模式
+    * 必须用var声明变量
+    * 禁止自定义的函数中的this指向window
+    * 创建eval作用域
+    * 对象不能有重名的属性
+区分 call/apply/bind
+    * call()/apply()是立即调用函数
+    * bind()是将函数返回
+    * call()于bind()的传参方式一致，而apply是传数组
+let/const关键字
+    * 在块作用域内有效 //ES5函数作用域，全局作用域
+    * 不能重复声明
+    * 不会预处理, 不存在提升
+    * const除了赋值后值不能改变，其他相同let
+箭头函数
+    * () =&gt; {...} 等于 function(){...}
+    * 箭头函数没有自己的this，箭头函数的this不是调用的时候决定的，
+      而是在定义的时候处在的对象就是它的this
+    * 扩展理解： 箭头函数的this看外层的是否有函数，
+      如果有，外层函数的this就是内部箭头函数的this，
+      如果没有，则this是window。
+      PS:因为被其他函数包裹的话，外层不执行，它是不会执行内部定义的，
+      函数是有作用域的。</code></pre>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+
+
+	<div>
+	  
+	</div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.hanshang.xyz/2019/08/08/原型链总结/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="HanShang">
+      <meta itemprop="description" content="为自己加油">
+      <meta itemprop="image" content="/images/author.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HS博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/08/原型链总结/" class="post-title-link" itemprop="url">原型链总结</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-08 09:42:33" itemprop="dateCreated datePublished" datetime="2019-08-08T09:42:33+08:00">2019-08-08</time>
+            </span>
+          
+
+          
+            
+
+            
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-08-24 11:51:33" itemprop="dateModified" datetime="2019-08-24T11:51:33+08:00">2019-08-24</time>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+            
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="fa fa-comment-o"></i>
+    </span>
+    
+      <span class="post-meta-item-text">评论数：</span>
+    
+  
+    <a href="/2019/08/08/原型链总结/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/08/原型链总结/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>图示如下<br><img src="https://s2.ax1x.com/2019/08/24/msjQ41.png" alt="msjQ41.png"><br>原型链总结四句话。<br>1.函数的原型对象的prototype是其实例对象的<em>proto</em><br>2.所有的函数对象，都是new Function()出来的（包括自身）<br>3.每个函数都有一个prototype属性, 它默认指向一个Object空对象(即称为: 原型对象)（Object对象除外）<br>4.Object的原型对象的_proto_为null即原型链的尽头</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+
+
+	<div>
+	  
+	</div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.hanshang.xyz/2019/08/07/第一小节js/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="HanShang">
+      <meta itemprop="description" content="为自己加油">
+      <meta itemprop="image" content="/images/author.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HS博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/07/第一小节js/" class="post-title-link" itemprop="url">第一小节js</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-07 11:35:36 / 修改时间：11:37:54" itemprop="dateCreated datePublished" datetime="2019-08-07T11:35:36+08:00">2019-08-07</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+            
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="fa fa-comment-o"></i>
+    </span>
+    
+      <span class="post-meta-item-text">评论数：</span>
+    
+  
+    <a href="/2019/08/07/第一小节js/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/07/第一小节js/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <pre><code>1-基本数据类型/值类型
+    1.1-String
+    1.2-Boolean
+    1.3-Null
+    1.4-Undefined
+    1.5-Number
+2-对象数据类型/引用数据类型
+    2.1-Object
+    2.2-Array
+    2.3-Function
+3-typeof
+    3.1-可以判断 undefined,function,string,boolean,number
+    3.2-不能判断 null,object,array
+4-==
+    4.1-x和y都是null或undefined:规则: 没有隐式类型转换,无条件返回true
+    4.2-x或y是NaN : NaN与任何数字都不等规则：没有隐式类型转换，无条件返回false
+    4.3-x和y都是string，boolean，number规则：有隐式类型转换，会将不是number类型的数据转成number
+    4.4-x或y是复杂数据类型 : 会先获取复杂数据类型的原始值之后再左比较
+    4.5-x和y都是复杂数据类型 :规则只比较地址，如果地址一致则返回true，否则返回false
+5-Boolean
+    5.1-false +0-0 NaN undefined null &apos;&apos;空串 false document.all()
+    5.2-true
+6-instanceof
+    6.1-左边实例，右边构造函数
+7-===
+    7.1-类型与值完全一致
+8-Number转换
+    8.1-可以转换为1 true
+    8.2-转换为0 &quot;&quot;空串，false,&quot;0&quot;,null,[]
+    8.3-转换为NaN &quot;xxx&quot;,undefined,{},function
+10-其他符号 &lt; , &gt;, + 等转换
+    https://blog.csdn.net/itcast_cn/article/details/82887895</code></pre>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+
+
+	<div>
+	  
+	</div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.hanshang.xyz/2019/08/04/无题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="HanShang">
+      <meta itemprop="description" content="为自己加油">
+      <meta itemprop="image" content="/images/author.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="HS博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/08/04/无题/" class="post-title-link" itemprop="url">无题</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+
+          
+          
+          
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-08-04 10:20:24 / 修改时间：11:10:51" itemprop="dateCreated datePublished" datetime="2019-08-04T10:20:24+08:00">2019-08-04</time>
+            </span>
+          
+
+          
+            
+
+            
+          
+
+          
+
+          
+          
+
+          
+
+          
+            
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="fa fa-comment-o"></i>
+    </span>
+    
+      <span class="post-meta-item-text">评论数：</span>
+    
+  
+    <a href="/2019/08/04/无题/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2019/08/04/无题/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+          
+
+          <br>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>外部引用图像<br><img src="https://s2.ax1x.com/2019/08/04/ey3Aun.jpg" alt="ey3Aun.jpg"><br>内嵌html</p>
+<iframe allowtransparency="yes" frameborder="0" width="300" height="300" src="/html/flower.html">
+
+
+
+</iframe>
+          
+        
+      
+    </div>
+
+    
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+
+
+	<div>
+	  
+	</div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+        
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://www.hanshang.xyz/2019/08/02/网易笔试复习要点/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -783,7 +1707,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">32</span>
+          <span class="site-state-item-count">37</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
